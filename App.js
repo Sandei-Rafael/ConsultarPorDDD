@@ -26,7 +26,7 @@ export default function App() {
       <TextInput
         style={[
           styles.input,
-          { borderColor: emFoco ? '#05e7e7' : '#018080' },
+          { borderColor: emFoco ? '#B6861E' : '#B6861E', color: "#fff", },
         ]}
         placeholder="Enter DDD"
         keyboardType="numeric" // Define o teclado como numérico
@@ -54,9 +54,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#171613',  // Cor neutra e suave para o fundo
     alignItems: 'center',
     justifyContent: 'center',
+    paddingHorizontal: 20, // Adiciona padding horizontal para mais espaçamento
   },
   input: {
     width: '80%',
